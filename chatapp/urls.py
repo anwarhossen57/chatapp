@@ -1,12 +1,7 @@
 
 from django.contrib import admin
 from django.urls import path
-from django.shortcuts import HttpResponse
-
-def home(rep):
-    return HttpResponse("This is home page")
-def about_user(rep):
-    return HttpResponse("This is about            page")
+from .views import *
 
 urlpatterns = [
     path("admin/", admin.site.urls),
